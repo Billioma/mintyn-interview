@@ -1,0 +1,9 @@
+export { default as Logo } from "./logo.png";
+export { default as Pfp } from "./avatar.png";
+export { default as wallet1 } from "./wallet1.png";
+export { default as wallet2 } from "./wallet2.png";
+export { default as wallet3 } from "./wallet3.png";
+export { default as settle } from "./settle.png";
+export { default as order1 } from "./order1.png";
+export { default as order2 } from "./order2.png";
+export { default as order3 } from "./order3.png";
