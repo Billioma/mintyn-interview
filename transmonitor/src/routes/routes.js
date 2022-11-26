@@ -1,6 +1,6 @@
 import { PATHS } from "./constants";
 import { Navigate } from "react-router-dom";
-import Dashboard from "../pages/Dashboard/Dashboard";
+import Dashboard from "../pages/Overview/Overview";
 
 const { DASHBOARD } = PATHS;
 

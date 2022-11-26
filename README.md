@@ -1,1 +1,0 @@
-# mintyn-interview

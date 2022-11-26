@@ -2,36 +2,20 @@ import {
   Box,
   Flex,
   HStack,
-  Menu,
-  MenuButton,
-  Button,
   Avatar,
-  // MenuList,
-  // MenuItem,
-  Icon,
   useMediaQuery,
-  useColorMode,
-  useColorModeValue,
   Text,
   Image,
 } from "@chakra-ui/react";
 import { useState } from "react";
-import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
 import { MdMenu } from "react-icons/md";
 import SideDrawer from "./SideDrawer";
 import SearchInput from "../common/SearchInput";
-import { BsFillMoonFill, BsFillSunFill } from "react-icons/bs";
 import { Notification } from "../data/Notification/Notifications";
 import { Logo, Pfp } from "../../assets/export";
 
-const Header = ({ data }) => {
+const Header = () => {
   const [showDrawerMenu, setShowDrawerMenu] = useState(false);
-  const { colorMode, toggleColorMode } = useColorMode();
-  const [isMenuClicked, setIsMenuClicked] = useState(false);
-  const handleMenuClick = () => {
-    setIsMenuClicked(!isMenuClicked);
-  };
-
   const [isMobile] = useMediaQuery("(max-width: 991px)");
   const toggleSidebar = () => {
     setShowDrawerMenu(true);
