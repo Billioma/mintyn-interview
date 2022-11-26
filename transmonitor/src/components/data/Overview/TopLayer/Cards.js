@@ -1,6 +1,6 @@
 import React from "react";
 import { Box, Flex, Grid, GridItem, Text } from "@chakra-ui/react";
-import { CardChart } from "../Charts/CardChart";
+import { CardChart } from "../../Charts/CardChart";
 
 export const Layout = ({ label, data }) => {
   return (

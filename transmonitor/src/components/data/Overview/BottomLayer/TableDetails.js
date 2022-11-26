@@ -1,17 +1,5 @@
-import {
-  Box,
-  Flex,
-  Table,
-  TableContainer,
-  Tbody,
-  Td,
-  Text,
-  Th,
-  Thead,
-  Tr,
-} from "@chakra-ui/react";
+import { Box, Flex, Td, Text, Tr } from "@chakra-ui/react";
 import React from "react";
-import { tableHeader } from "../../common/constants";
 import { IoIosArrowDown } from "react-icons/io";
 
 export const Details = ({ reconciled, pending, unreconciled }) => {
@@ -62,35 +50,3 @@ export const Details = ({ reconciled, pending, unreconciled }) => {
     </Tr>
   );
 };
-const TableLayout = () => {
-  return (
-    <Box>
-      <TableContainer>
-        <Table bg="#fff" fontSize="13px" color="gray.500">
-          <Thead bg="#EAEEF0">
-            <Tr>
-              {tableHeader.map((data, i) => (
-                <Th textTransform="capitalize" key={i}>
-                  {data}
-                </Th>
-              ))}
-            </Tr>
-          </Thead>
-          <Tbody>
-            <Details reconciled />
-            <Details pending />
-            <Details reconciled />
-            <Details reconciled />
-            <Details pending />
-            <Details unreconciled />
-            <Details reconciled />
-            <Details unreconciled />
-            <Details pending />
-          </Tbody>
-        </Table>
-      </TableContainer>
-    </Box>
-  );
-};
-
-export default TableLayout;

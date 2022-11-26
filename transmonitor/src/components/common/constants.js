@@ -86,3 +86,13 @@ export const tableHeader = [
   "",
   "",
 ];
+
+export const options = [
+  "All",
+  "Reconcilled",
+  "Un-reconcilled",
+  "Settled",
+  "Unsettled",
+];
+
+export const count = ["20", "40", "60"];
