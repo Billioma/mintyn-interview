@@ -77,3 +77,12 @@ export const activeStyle = {
   padding: "10px",
   position: "relative",
 };
+
+export const tableHeader = [
+  "Item Type",
+  "Price",
+  "Transaction No",
+  "Time",
+  "",
+  "",
+];
